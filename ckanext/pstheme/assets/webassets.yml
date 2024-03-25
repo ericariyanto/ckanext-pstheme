@@ -1,0 +1,14 @@
+pstheme-js:
+  filter: rjsmin
+  output: ckanext-pstheme/%(version)s-pstheme.js
+  contents:
+    - pstheme.js
+  extra:
+    preload:
+      - base/main
+
+pstheme-css:
+  filter: cssrewrite
+  output: ckanext-pstheme/%(version)s-pstheme.css
+  contents:
+    - pstheme.css
